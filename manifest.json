@@ -1,0 +1,32 @@
+{
+  // È obbligatorio definire nome e versione dell'applicazione
+  // il manifest che utilizziamo è quello della versione 2
+  "name": "Remember 5/9",
+  "version": "2.0",
+  "manifest_version": 2,
+   
+  // Opzionale, indichiamo descrizione, formato e nome dell'immagine
+  "description": "An extension for mr robot fans",
+  "icons": { "16": "logo.png" },
+   
+  // Serve per dichiarare quali moduli o API di chrome utilizzeremo
+  // nell'applicazione. Per questo esempio abbiamo indicato che 
+  // utilizzeremo i moduli chrome.tabs o chrome.windows
+  "permissions": [
+    "tabs"
+  ],
+   
+  // Ecco la parte in cui definiamo i nostri script per i contenuti
+  // e indichiamo a quali url applicare la nostra estensione
+  "content_scripts":
+  [
+    {
+      "matches": ["https://www.google.com/*", "https://www.google.it/*"], 
+      "js":  [ "script.js"]
+    }
+  ],
+
+ "web_accessible_resources":[
+    "images/*.png"
+ ] 
+}
