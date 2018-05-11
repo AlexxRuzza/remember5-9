@@ -1,6 +1,6 @@
-# remember5-9 chrome extension
+# Remember5-9 chrome extension
 
-## installation instructions
+## Installation instructions
 * Download the whole repository and extract it to a folder.
 * Open Chrome, navigate to Settings -> Extensions
 * Here Look for the Option “Developer Mode" and enable it
